@@ -1,5 +1,9 @@
 # Product Features
 
+## Supported Features
+- `docs/client-sync.md`
+- `docs/website-sync-details.md`
+
 ## v1 Service: Simple Backup (One-Way Sync)
 
 ### Summary

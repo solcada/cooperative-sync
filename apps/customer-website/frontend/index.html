@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooperative Sync | Sync Details</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">Cooperative Sync</div>
+        <nav class="nav">
+          <a class="nav-link nav-link-active" href="./index.html">Sync Details</a>
+          <a class="nav-link" href="./accounts.html">Account</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="panel">
+        <h1>Backup Sync Details</h1>
+        <p class="subtitle">Current backup status for this account.</p>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <p class="stat-label">Last Successful Sync</p>
+            <p id="last-sync" class="stat-value">-</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Backed Up Data</p>
+            <p id="data-backed-up" class="stat-value">-</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Files Backed Up</p>
+            <p id="file-count" class="stat-value">-</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

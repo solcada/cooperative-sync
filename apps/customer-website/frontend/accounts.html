@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooperative Sync | Account</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">Cooperative Sync</div>
+        <nav class="nav">
+          <a class="nav-link" href="./index.html">Sync Details</a>
+          <a class="nav-link nav-link-active" href="./accounts.html">Account</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="panel">
+        <h1>Payment Information</h1>
+        <p class="subtitle">Update your default card for subscription billing.</p>
+
+        <form id="payment-form" class="form">
+          <label class="field">
+            <span>Cardholder Name</span>
+            <input name="cardholder" type="text" required placeholder="Alex Smith" />
+          </label>
+
+          <label class="field">
+            <span>Card Number</span>
+            <input
+              name="cardNumber"
+              type="text"
+              required
+              inputmode="numeric"
+              placeholder="4242 4242 4242 4242"
+            />
+          </label>
+
+          <div class="field-row">
+            <label class="field">
+              <span>Expiry (MM/YY)</span>
+              <input name="expiry" type="text" required placeholder="08/29" />
+            </label>
+            <label class="field">
+              <span>CVC</span>
+              <input name="cvc" type="text" required inputmode="numeric" placeholder="123" />
+            </label>
+            <label class="field">
+              <span>ZIP / Postal Code</span>
+              <input name="postalCode" type="text" required placeholder="94105" />
+            </label>
+          </div>
+
+          <button class="btn" type="submit">Save Payment Details</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="./accounts.js"></script>
+  </body>
+</html>

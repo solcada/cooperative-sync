@@ -1,0 +1,8 @@
+[package]
+name = "rust-client"
+version = "0.1.0"
+edition = "2021"
+description = "Rust client prototype for the sync system"
+license = "MIT"
+
+[dependencies]
